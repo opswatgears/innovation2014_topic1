@@ -1,0 +1,52 @@
+<div style="width: 730px; padding: 10px; border-radius: 4px; border: solid 1px #DADADA; display: inline-block;">
+    <div style="float: left; font-size: 20px; margin: 0px 20px 0px 0px;">
+        <p>@fileName</p>
+        <a href="">
+            <img style="width: 175px; height: 175px;" src="https://www.metascan-online.com/badge/index.php?date=@date&engines=@totalEngines&virus=@detectedEngines"/>
+        </a>
+    </div>
+    <div style="float: left; margin: 45px 0px 0px 10px; width: 450px;">
+        <table style="border-spacing: 10px; font-size: 12px; white-space: nowrap;">
+            <tr>
+                <td>First uploaded</td>
+                <td>@firstUploaded</td>
+            </tr>
+            <tr>
+                <td>Last scanned</td>
+                <td>@lastScanned</td>
+            </tr>
+            <tr>
+                <td>File type</td>
+                <td>@fileType</td>
+            </tr>
+            <tr>
+                <td>File size</td>
+                <td>@fileSize</td>
+            </tr>
+            <tr>
+                <td>MD5</td>
+                <td>@md5</td>
+            </tr>
+            <tr>
+                <td>SHA1</td>
+                <td>@sha1</td>
+            </tr>
+            <tr>
+                <td>SHA256</td>
+                <td>@sha256</td>
+            </tr>
+        </table>
+    </div>
+</div>
+<div style="width: 730px; padding: 10px; border-radius: 4px; border: solid 1px #DADADA; display: inline-block; margin: 10px 0px 0px 0px;">
+    <table width="100%">
+        <tr style="font-weight: bold;">
+            <td>ENGINE</td>
+            <td>SCAN TIME</td>
+            <td>DEFINITION DATE</td>
+            <td>THREAT</td>
+            <td>RESULT</td>
+        </tr>
+        @listEngines
+    </table>
+</div>

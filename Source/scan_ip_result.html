@@ -1,0 +1,101 @@
+<style>
+    table.table-result th, table.table-result td {
+        border: solid 1px #DADADA;
+        padding: 5px;
+    }
+    table.table-result {
+        border-collapse: collapse;
+        width: 752px;
+        margin: 15px 0px 0px 0px;
+    }
+    .col-source, .col-last-update, .col-reference-link, .col-score, .col-status {
+        text-align: center;
+    }
+    table.table-result th {
+        font-weight: bold;
+        background: #F0F0F0;
+    }
+    .row-virus {
+        background: #FFFBFA;
+        text-color: #FF0000;
+    }
+    .circle-report {
+        float: left;
+        margin: 10px 0px 0px 0px;
+        width: 175px;
+        height: 175px;
+        background: url('qrc:/image/@imageName') no-repeat scroll 0px 0px / 100% 100% transparent;
+    }
+    .circle-report p.number {
+        font-size: 30px;
+        color: #FFFFFF;
+        margin: 45px 0px 0px 0px;
+        text-align: center;
+    }
+    .file-info{
+        float: left;
+        margin: 4px 0px 0px 10px;
+        width: 540px;
+        border: 1px solid #DADADA;
+        border-radius: 3px;
+        overflow: hidden;
+    }
+    .file-name {
+        font-size: 22px;
+        margin: 5px 0px 0px 10px;
+    }
+    th {
+        background: #FBFBFB;
+    }
+</style>
+
+<div style="width: 730px; padding: 10px; border-radius: 4px; border: solid 1px #DADADA; display: inline-block;">
+
+    <div class="circle-report">
+        <p class="number">@number/@total</p>
+    </div>
+
+    <div class="file-info">
+
+        <p class="file-name">IP: @ipAddress</p>
+
+        <table style="border-spacing: 10px; font-size: 12px; white-space: nowrap;">
+            <tr>
+                <td>Country Name</td>
+                <td>@countryName</td>
+            </tr>
+            <tr>
+                <td>Country Code</td>
+                <td>@countryCode</td>
+            </tr>
+            <tr>
+                <td>Region Name</td>
+                <td>@regionName</td>
+            </tr>
+            <tr>
+                <td>Region Code</td>
+                <td>@regionCode</td>
+            </tr>
+            <tr>
+                <td>City</td>
+                <td>@city</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<table class="table-result">
+    <col width="22%">
+    <col width="15%">
+    <col width="25%">
+    <col width="33%">
+    <col width="10%">
+    <tr>
+        <th>SOURCE</th>
+        <th>LAST UPDATE</th>
+        <th>REFERENCE LINK</th>
+        <th>SCORE</th>
+        <th>RESULT</th>
+    </tr>
+    @listSources
+</table>

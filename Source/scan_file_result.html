@@ -1,0 +1,105 @@
+<style>
+    table.table-result th, table.table-result td {
+        border: solid 1px #DADADA;
+        padding: 5px;
+    }
+    table.table-result {
+        border-collapse: collapse;
+        width: 752px;
+        margin: 15px 0px 0px 0px;
+    }
+    .col-engine, .col-scan-time, .col-definition-date, .col-threat, .col-status {
+        text-align: center;
+    }
+    table.table-result th {
+        font-weight: bold;
+        background: #F0F0F0;
+    }
+    .row-virus {
+        background: #FFFBFA;
+    }
+    .circle-report {
+        float: left;
+        margin: 10px 0px 0px 0px;
+        width: 175px;
+        height: 175px;
+        background: url('qrc:/image/@imageName') no-repeat scroll 0px 0px / 100% 100% transparent;
+    }
+    .circle-report p.number {
+        font-size: 30px;
+        color: #FFFFFF;
+        margin: 45px 0px 0px 0px;
+        text-align: center;
+    }
+    .file-info{
+        float: left;
+        margin: 4px 0px 0px 10px;
+        width: 540px;
+        border: 1px solid #DADADA;
+        border-radius: 3px;
+        overflow: hidden;
+    }
+    .file-name {
+        font-size: 22px;
+        margin: 5px 0px 0px 10px;
+    }
+</style>
+
+<div style="width: 730px; padding: 10px; border-radius: 4px; border: solid 1px #DADADA; display: inline-block;">
+
+    <div class="circle-report">
+        <p class="number">@number/@total</p>
+    </div>
+
+    <div class="file-info">
+
+        <p class="file-name">@fileName</p>
+
+        <table style="border-spacing: 10px; font-size: 12px; white-space: nowrap;">
+            <tr>
+                <td>First uploaded</td>
+                <td>@firstUploaded</td>
+            </tr>
+            <tr>
+                <td>Last scanned</td>
+                <td>@lastScanned</td>
+            </tr>
+            <tr>
+                <td>File type</td>
+                <td>@fileType</td>
+            </tr>
+            <tr>
+                <td>File size</td>
+                <td>@fileSize</td>
+            </tr>
+            <tr>
+                <td>MD5</td>
+                <td>@md5</td>
+            </tr>
+            <tr>
+                <td>SHA1</td>
+                <td>@sha1</td>
+            </tr>
+            <tr>
+                <td>SHA256</td>
+                <td>@sha256</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<table class="table-result">
+    <col width="22%">
+    <col width="15%">
+    <col width="25%">
+    <col width="33%">
+    <col width="10%">
+    <tr>
+        <th>ENGINE</th>
+        <th>SCAN TIME</th>
+        <th>DEFINITION DATE</th>
+        <th>THREAT</th>
+        <th>RESULT</th>
+    </tr>
+    @listEngines
+</table>

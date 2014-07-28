@@ -1,0 +1,23 @@
+<RCC>
+    <qresource prefix="/template">
+        <file>engine.html</file>
+        <file>scan_file_result.html</file>
+        <file>scan_ip_result.html</file>
+        <file>ip_source.html</file>
+        <file>scan_pending.html</file>
+        <file>hash_not_found.html</file>
+    </qresource>
+    <qresource prefix="/image">
+        <file>loading.gif</file>
+        <file>issue.svg</file>
+        <file>normal.svg</file>
+        <file>about.png</file>
+        <file>engine_found_threat.png</file>
+        <file>engine_not_found_threat.png</file>
+        <file>source_found_threat.png</file>
+        <file>source_not_found_threat.png</file>
+        <file>opswat-logo.ico</file>
+        <file>scan_pending.png</file>
+        <file>scan_not_found.png</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>832</width>
+    <height>634</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QTabWidget" name="tabContainer">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>841</width>
+      <height>651</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>3</number>
+    </property>
+    <widget class="QWidget" name="tabScanMultipleFiles">
+     <attribute name="title">
+      <string>Scan Files</string>
+     </attribute>
+     <widget class="QGroupBox" name="groupBox_8">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>33</y>
+        <width>811</width>
+        <height>291</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <widget class="TableScan" name="tableScan">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>790</width>
+         <height>271</height>
+        </rect>
+       </property>
+       <property name="dragEnabled">
+        <bool>true</bool>
+       </property>
+       <property name="dragDropOverwriteMode">
+        <bool>true</bool>
+       </property>
+       <property name="dragDropMode">
+        <enum>QAbstractItemView::DragDrop</enum>
+       </property>
+       <property name="alternatingRowColors">
+        <bool>true</bool>
+       </property>
+       <column>
+        <property name="text">
+         <string>Date</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>File</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Status</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Process</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>MD5</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Detected Engines</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Metascan Online Result</string>
+        </property>
+       </column>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>16</x>
+        <y>10</y>
+        <width>471</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Drag and drop your files here to scan</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lbScanFileResult_2">
+      <property name="geometry">
+       <rect>
+        <x>16</x>
+        <y>330</y>
+        <width>191</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Scan result</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_9">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>350</y>
+        <width>811</width>
+        <height>201</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <widget class="QWebView" name="wvTableResult">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>791</width>
+         <height>181</height>
+        </rect>
+       </property>
+       <property name="url">
+        <url>
+         <string>about:blank</string>
+        </url>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QPushButton" name="btnClearTableScan">
+      <property name="geometry">
+       <rect>
+        <x>676</x>
+        <y>0</y>
+        <width>150</width>
+        <height>38</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Clear all scan item</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tabLookUpHash">
+     <attribute name="title">
+      <string>Lookup Hash</string>
+     </attribute>
+     <widget class="QGroupBox" name="groupBox_4">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>100</y>
+        <width>811</width>
+        <height>441</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <widget class="QWebView" name="wvLookUpHash">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>791</width>
+         <height>421</height>
+        </rect>
+       </property>
+       <property name="url">
+        <url>
+         <string>about:blank</string>
+        </url>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_5">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>811</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <widget class="QLineEdit" name="edHash">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>10</y>
+         <width>701</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="readOnly">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btnLookupHash">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>4</y>
+         <width>75</width>
+         <height>34</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Lookup</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>16</x>
+        <y>10</y>
+        <width>521</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Input a MD5/SHA1/SHA256 checksum to see if the hash has been compromised</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>16</x>
+        <y>80</y>
+        <width>101</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Scan Result</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tabScanIP">
+     <attribute name="title">
+      <string>Scan An IP Address</string>
+     </attribute>
+     <widget class="QGroupBox" name="groupBox_6">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>811</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <widget class="QLineEdit" name="edScanIP">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>10</y>
+         <width>701</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="readOnly">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btnScanIP">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>4</y>
+         <width>75</width>
+         <height>34</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Scan</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_7">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>100</y>
+        <width>811</width>
+        <height>441</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <widget class="QWebView" name="wvScanIP">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>791</width>
+         <height>421</height>
+        </rect>
+       </property>
+       <property name="url">
+        <url>
+         <string>about:blank</string>
+        </url>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>16</x>
+        <y>80</y>
+        <width>81</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Scan Result</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>16</x>
+        <y>10</y>
+        <width>471</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Scan an IP using 15 sources to determine if the IP has been compromised</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tabEventlog">
+     <attribute name="title">
+      <string>Eventlog</string>
+     </attribute>
+     <widget class="QGroupBox" name="groupBox_3">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>33</y>
+        <width>811</width>
+        <height>511</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <widget class="QTableWidget" name="tableLog">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>790</width>
+         <height>493</height>
+        </rect>
+       </property>
+       <property name="dragEnabled">
+        <bool>false</bool>
+       </property>
+       <property name="dragDropOverwriteMode">
+        <bool>false</bool>
+       </property>
+       <property name="dragDropMode">
+        <enum>QAbstractItemView::NoDragDrop</enum>
+       </property>
+       <property name="alternatingRowColors">
+        <bool>true</bool>
+       </property>
+       <column>
+        <property name="text">
+         <string>Date</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>File</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Status</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>MD5</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Link Result</string>
+        </property>
+       </column>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>16</x>
+        <y>10</y>
+        <width>471</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Scan History</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnClearLog">
+      <property name="geometry">
+       <rect>
+        <x>730</x>
+        <y>0</y>
+        <width>96</width>
+        <height>38</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Clear log</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>832</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="nativeMenuBar">
+    <bool>false</bool>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionAddFile"/>
+    <addaction name="actionSettings"/>
+    <addaction name="separator"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionAbout"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <action name="actionSettings">
+   <property name="text">
+    <string>Settings</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+  <action name="actionAddFile">
+   <property name="text">
+    <string>Add a file</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>QWebView</class>
+   <extends>QWidget</extends>
+   <header>QtWebKitWidgets/QWebView</header>
+  </customwidget>
+  <customwidget>
+   <class>TableScan</class>
+   <extends>QTableWidget</extends>
+   <header>tablescan.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

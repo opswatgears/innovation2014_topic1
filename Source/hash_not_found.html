@@ -1,0 +1,46 @@
+<style>
+    .circle-report {
+        float: left;
+        margin: 10px 0px 0px 0px;
+        width: 175px;
+        height: 175px;
+        background: url('qrc:/image/scan_not_found.png') no-repeat scroll 0px 0px / 100% 100% transparent;
+    }
+    .circle-report p.number {
+        font-size: 30px;
+        color: #FFFFFF;
+        margin: 45px 0px 0px 0px;
+        text-align: center;
+    }
+    .file-info{
+        float: left;
+        margin: 4px 0px 0px 10px;
+        width: 540px;
+        border: 1px solid #DADADA;
+        border-radius: 3px;
+        overflow: hidden;
+        height: 190px;
+    }
+    .file-name {
+        font-size: 22px;
+        margin: 5px 0px 0px 10px;
+    }
+</style>
+
+<div style="width: 730px; padding: 10px; border-radius: 4px; border: solid 1px #DADADA; display: inline-block;">
+
+    <div class="circle-report">
+    </div>
+
+    <div class="file-info">
+
+        <p class="file-name">Hash: @hash</p>
+
+        <table style="border-spacing: 10px; white-space: nowrap;">
+            <tr>
+                <td></td>
+                <td style="font-size: 16px; font-style: italic;">There are no results that match your search.</td>
+            </tr>
+        </table>
+    </div>
+</div>
