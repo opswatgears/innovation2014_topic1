@@ -1,11 +1,6 @@
 #include "sqlliteprovider.h"
-#include <QSqlDatabase>
 #include "Definition.h"
-#include <QDebug>
-#include <QDir>
-#include <QSqlQuery>
-#include <QSqlError>
-#include <QList>
+#include "stringprovider.h"
 #include "eventlog.h"
 
 
@@ -27,7 +22,7 @@ SqlLiteProvider::~SqlLiteProvider()
 bool SqlLiteProvider::loadDatabase()
 {
     db = QSqlDatabase::addDatabase("QSQLITE");
-    db.setDatabaseName(DATABASE_NAME);
+    db.setDatabaseName(StringProvider::APP_PATH + DATABASE_NAME);
     if(db.open()) {
 
         QSqlQuery query(db);

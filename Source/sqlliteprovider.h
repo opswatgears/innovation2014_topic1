@@ -3,9 +3,12 @@
 
 #include "eventlog.h"
 
+#include <QDebug>
 #include <QList>
 #include <QObject>
 #include <QSqlDatabase>
+#include <QSqlQuery>
+#include <QSqlError>
 
 class SqlLiteProvider : public QObject
 {

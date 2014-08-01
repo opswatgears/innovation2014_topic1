@@ -2,6 +2,7 @@
 #define HTMLTEMPLATE_H
 
 #include <QFile>
+#include <QDebug>
 
 class HtmlTemplate
 {

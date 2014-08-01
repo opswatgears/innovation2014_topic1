@@ -7,6 +7,7 @@ QString StringProvider::HTML_TEMPLATE_SCAN_IP_RESULT;
 QString StringProvider::HTML_TEMPLATE_SCAN_PENDING_RESULT;
 QString StringProvider::HTML_TEMPLATE_SCAN_HASH_NOT_FOUND;
 QString StringProvider::METASCAN_ONLINE_KEY;
+QString StringProvider::APP_PATH;
 
 StringProvider::StringProvider()
 {

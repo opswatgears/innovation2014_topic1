@@ -2,9 +2,6 @@
 #include "ui_settingsdialog.h"
 #include "Definition.h"
 #include "stringprovider.h"
-#include <QtGui>
-#include <QIcon>
-#include <QMessageBox>
 
 SettingsDialog::SettingsDialog(QWidget *parent) :
     QDialog(parent),

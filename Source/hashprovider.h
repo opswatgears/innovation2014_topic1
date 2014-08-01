@@ -6,8 +6,7 @@
 #include <QRunnable>
 #include <QFile>
 #include <QCryptographicHash>
-#include <QThread>
-#include <QtGui>
+#include <QThreadPool>
 
 class HashProvider : public QObject, public QRunnable
 {

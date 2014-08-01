@@ -3,9 +3,6 @@
 
 #include <QFile>
 #include <QDebug>
-#include <QHostAddress>
-#include <QRegExpValidator>
-#include <QRegExp>
 #include <QStringList>
 
 class StringProvider
@@ -18,6 +15,7 @@ public:
     static QString HTML_TEMPLATE_SCAN_PENDING_RESULT;
     static QString HTML_TEMPLATE_SCAN_HASH_NOT_FOUND;
     static QString METASCAN_ONLINE_KEY;
+    static QString APP_PATH;
     static void loadTemplate();
     static QString formatFileSize(quint64);
     static QString formatDigit(int, int digit = 5);

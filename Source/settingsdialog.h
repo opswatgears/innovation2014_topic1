@@ -2,6 +2,9 @@
 #define SETTINGSDIALOG_H
 
 #include <QDialog>
+#include <QIcon>
+#include <QMessageBox>
+#include <QSettings>
 
 namespace Ui {
 class SettingsDialog;

@@ -1,14 +1,15 @@
 #include "mainwindow.h"
 #include "Definition.h"
+#include "stringprovider.h"
 
 #include <QApplication>
 #include <QIcon>
 
-#include <QThread>
-
 int main(int argc, char *argv[])
 {
     QApplication qApplication(argc, argv);
+
+    StringProvider::APP_PATH = QCoreApplication::applicationDirPath();
 
     QIcon qicon(":image/opswat-logo.ico");
 

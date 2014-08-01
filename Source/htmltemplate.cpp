@@ -1,5 +1,4 @@
 #include "htmltemplate.h"
-#include <QtGui>
 
 
 QString HtmlTemplate::getTemplate(QString templateName)
